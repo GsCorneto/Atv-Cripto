@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Silvérios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Criptografador</h1>
+        <label for="text">Texto a ser criptografado:</label>
+        <textarea id="text" rows="4" placeholder="Digite seu texto aqui..."></textarea>
+
+        <label for="key">Chave Secreta:</label>
+        <input type="text" id="key" placeholder="Digite sua chave secreta">
+
+        <button onclick="criptografarTexto()">Criptografar</button>
+        <button onclick="descriptografarTexto()">Descriptografar</button>
+
+        <div class="output">
+            <strong>Resultado:</strong>
+            <p id="output"></p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
